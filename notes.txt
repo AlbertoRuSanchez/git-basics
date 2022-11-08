@@ -1,0 +1,14 @@
+
+GIT BASICS
+
+Working directory -> root folder. Where .git is
+Staging area -> files add/prepared to be commited
+
+
+
+GIT COMMANDS
+
+git init -> inititate git repository on that folder
+git status -> show status of the actual local git repository
+git add . -> add to staging all files with changes
+git add "file" -> add file to staging
