@@ -1,4 +1,5 @@
 
+
 GIT BASICS
 
 Working directory -> root folder. Where .git is
