@@ -29,3 +29,11 @@ GIT COMMIT
     git commit -m "commit description starting with imperative verb prefered" -> most common use of commit
     git commit --amend -> recommit previous commit. It opens default text editor
 
+GIT IGNORE 
+
+official doc -> https://www.git-scm.com/docs/gitignore
+
+tool for default gitignore files -> https://www.toptal.com/developers/gitignore/
+
+create .gitignore on root folder git repository to avoid git to track specificied files or folders
+
