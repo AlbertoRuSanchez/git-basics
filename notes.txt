@@ -1,15 +1,31 @@
 
 
+GIT OFFICIAL DOC
+
+https://git-scm.com/doc
+
 GIT BASICS
 
-Working directory -> root folder. Where .git is
+Working directory -> root folder. Where .git is. Local repository
 Staging area -> files add/prepared to be commited
+Origin -> remote repository
 
 
 GIT COMMANDS
 
 git init -> inititate git repository on that folder
+
 git status -> show status of the actual local git repository
+
 git log -> repository log info
-git add . -> add to staging all files with changes
-git add "file" -> add file to staging
+git log --oneline -> repository log info abbreviated to one line per commit
+
+GIT COMMIT
+
+    git add . -> add to staging all files with changes
+    git add "file" -> add file to staging
+
+    git commit -> open default text editor and wait until save and exit to commit
+    git commit -m "commit description starting with imperative verb prefered" -> most common use of commit
+    git commit --amend -> recommit previous commit. It opens default text editor
+
