@@ -9,7 +9,7 @@ GIT BASICS
 Working directory -> root folder. Where .git is. Local repository
 Staging area -> files add/prepared to be commited
 Origin -> remote repository
-
+HEAD -> Current branch pointer. HEAD points to actual branch and branch points to a commit (usually last commit) 
 
 GIT COMMANDS
 
@@ -36,4 +36,10 @@ official doc -> https://www.git-scm.com/docs/gitignore
 tool for default gitignore files -> https://www.toptal.com/developers/gitignore/
 
 create .gitignore on root folder git repository to avoid git to track specificied files or folders
+
+BRANCHES
+
+    git branch -> list branches from the repository
+    git branch "new branch name" -> create a branch from the current branch and commit
+    git switch "branch name to switch" -> switch to that branch
 
