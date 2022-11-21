@@ -28,6 +28,7 @@ GIT COMMIT
     git commit -> open default text editor and wait until save and exit to commit
     git commit -m "commit description starting with imperative verb prefered" -> most common use of commit
     git commit --amend -> recommit previous commit. It opens default text editor
+    git commit -a -m "commit message" -> add all modified files and commit in one step
 
 GIT IGNORE 
 
@@ -40,7 +41,9 @@ create .gitignore on root folder git repository to avoid git to track specificie
 BRANCHES
 
     git branch -> list branches from the repository
-    git branch "new branch name" -> create a branch from the current branch and commit
+    git branch "new branch name" -> create a branch from the current HEAD
     git switch "branch name to switch" -> switch to that branch
+    git switch -c "new branch name" -> create a new branch and switch
+    git checkout "branch name" -> same function as switch. It is the older way. Still common though
 
     changes for stage practice
