@@ -43,3 +43,4 @@ BRANCHES
     git branch "new branch name" -> create a branch from the current branch and commit
     git switch "branch name to switch" -> switch to that branch
 
+    changes for stage practice
