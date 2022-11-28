@@ -45,5 +45,7 @@ BRANCHES
     git switch "branch name to switch" -> switch to that branch
     git switch -c "new branch name" -> create a new branch and switch
     git checkout "branch name" -> same function as switch. It is the older way. Still common though
+    git branch -d "branch name" -> Delete branch. You cant do it if your are in this branch
+    git branch -m "branch name to rename" "branch new name"-> rename name of a branch
 
     changes for stage practice
