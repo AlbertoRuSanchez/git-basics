@@ -51,3 +51,15 @@ BRANCHES
 MERGE
 
     git merge "branch to merge from" -> merges the commits from a branch to actual HEAD
+    ## if your feature branch just has commits that master doesnt and master does not have any new commit, i will be a Fast Forwards merge. I will just move master to feature branch HEAD.
+
+    ## my  feature branche has two commits, master, where i am going to merge, has one new commits. Master commit affects to a file that is not in conflict with anu of my commit files. When git merge, git will do a merge commit, will merge both branches, but will add a commit with a comment of "Merge branch 'branch name'" at head of master.
+
+    ##If master has a commit that involves a file that is in my feature branch commit, when merge, there will be a conflict. Git will ask me to choose a version. Every file with conflcit will have some tags to refer the conflict. 
+
+	##Tags are <<<<< HEAD
+	## changes of my HEAD
+	## =================
+ 	## changes from the other branch
+	## <<<< branch name 
+
