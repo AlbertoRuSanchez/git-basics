@@ -48,4 +48,6 @@ BRANCHES
     git branch -d "branch name" -> Delete branch. You cant do it if your are in this branch
     git branch -m "branch name to rename" "branch new name"-> rename name of a branch
 
-    changes for stage practice
+MERGE
+
+    git marge "branch to merge from" -> merges the commits from a branch to actual HEAD
