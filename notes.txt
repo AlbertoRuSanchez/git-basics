@@ -50,4 +50,4 @@ BRANCHES
 
 MERGE
 
-    git marge "branch to merge from" -> merges the commits from a branch to actual HEAD
+    git merge "branch to merge from" -> merges the commits from a branch to actual HEAD
