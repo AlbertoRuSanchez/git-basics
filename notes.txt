@@ -63,3 +63,17 @@ MERGE
  	## changes from the other branch
 	## <<<< branch name 
 
+DIFF
+
+	#shows the difference between two spots of the repository. it could be between working directory, HEAD, staged files, commits, branches...etc.
+
+	git diff -> showsw difference between working directiory and staged files
+	git diff HEAD -> shows difference between working directory and HEAD (last commit of actual branch)
+	git diff HEAD filename.txt -> shows difference between staged file and same file in HEAD
+	git diff --staged -> shows difference between staged files and HEAD
+	 
+
+
+
+
+
