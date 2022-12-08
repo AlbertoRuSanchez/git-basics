@@ -8,6 +8,7 @@ GIT BASICS
 
 Working directory -> root folder. Where .git is. Local repository
 Staging area -> files add/prepared to be commited
+Index -> = staging area
 Origin -> remote repository
 HEAD -> Current branch pointer. HEAD points to actual branch and branch points to a commit (usually last commit) 
 
@@ -73,6 +74,16 @@ DIFF
 	git diff --staged -> shows difference between staged files and HEAD
 	 
 
+
+GIT STASH
+
+    #You can stash changes of working directory working + stage area and change to another branch if needed.
+    #it is like to save a version on a memory, and if we want to recover those changes back, we just use unstash
+
+    git stash -> save changes and rollback to previous commit. Now you can change to another branch of commit without problemas.
+    git stash pop -> apply stashed changes to current version and remove stash
+    git stash apply -> apply stashed changes to current version and dont remove stash
+    git stash list -> list the stashes. You can stash several changes in distinct stashes
 
 
 
