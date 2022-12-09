@@ -44,11 +44,13 @@ BRANCHES
 
     git branch -> list branches from the repository
     git branch "new branch name" -> create a branch from the current HEAD
-    git switch "branch name to switch" -> switch to that branch
+    git switch "branch name to switch" -> switch to that branch. If you have not that branch locally, but you do remotely, it will connect to remote branch
     git switch -c "new branch name" -> create a new branch and switch
     git checkout "branch name" -> same function as switch. It is the older way. Still common though
+    git checkout remotename/branchname -> point to that remote branch
     git branch -d "branch name" -> Delete branch. You cant do it if your are in this branch
     git branch -m "branch name to rename" "branch new name"-> rename name of a branch
+    git branch -r -> show remote branches
 
 MERGE
 
@@ -114,6 +116,9 @@ PUSH
 
     git push "remotename" "branchname" -> update the branch in remote with commits in your local + 
     #You dont really have to be on the brancah you want to push
+
+FETCHING AND PULLING
+
 
 
 
