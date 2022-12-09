@@ -11,6 +11,7 @@ Staging area -> files add/prepared to be commited
 Index -> = staging area
 Origin -> remote repository
 HEAD -> Current branch pointer. HEAD points to actual branch and branch points to a commit (usually last commit) 
+Detached HEAD -> When HEAD points to an old commit of the current branch
 
 GIT COMMANDS
 
@@ -84,6 +85,20 @@ GIT STASH
     git stash pop -> apply stashed changes to current version and remove stash
     git stash apply -> apply stashed changes to current version and dont remove stash
     git stash list -> list the stashes. You can stash several changes in distinct stashes
+
+
+UNDO changes and time travel 
+
+    #We can checkout to a previous version. To a previous commit in order to see how the code was at that point. Or we could even
+    #create a new branch based on a previous commit. For that, we checkout to that commit, pointing HEAD to that branch -> commit.
+
+    git checkout "commit-hash" -> set HEAD to point to that branch -> commit
+    git checkout HEAD~n -> same as before but you can checkout by HEAD number. Being HEAD the last, 1 previous and so forth
+    git switch "branch name" -> to recover the real HEAD of that branch where we checkedout to previous commit
+    git checkout HEAD -> discard changes from working directory and reset to HEAD version
+    git restore "file name" -> reset file to HEAD version 
+    git restore --staged "filename" -> unstage file that was staged. It doesnt restore the content of the file, just removes it from staged area
+    
 
 
 
