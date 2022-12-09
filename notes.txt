@@ -98,6 +98,9 @@ UNDO changes and time travel
     git checkout HEAD -> discard changes from working directory and reset to HEAD version
     git restore "file name" -> reset file to HEAD version 
     git restore --staged "filename" -> unstage file that was staged. It doesnt restore the content of the file, just removes it from staged area
+    git reset "commit-hash" -> it will remove commits between actual HEAD and that commit. Then it points HEAD to that commit.
+    git reset --hard "commit-hash" -> same as before, but, it also revert working directory to state of the commit. WARNING! you will lose your files and changes
+
     
 
 
