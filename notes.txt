@@ -9,7 +9,7 @@ GIT BASICS
 Working directory -> root folder. Where .git is. Local repository
 Staging area -> files add/prepared to be commited
 Index -> = staging area
-Origin -> remote repository
+Origin -> remote repository URL
 HEAD -> Current branch pointer. HEAD points to actual branch and branch points to a commit (usually last commit) 
 Detached HEAD -> When HEAD points to an old commit of the current branch
 
@@ -102,6 +102,18 @@ UNDO changes and time travel
     #Dont use git reset if you are working with other people, because it will be hard to concile 
     git reset --hard "commit-hash" -> same as before, but, it also revert working directory to state of the commit. WARNING! you will lose your files and changes.
     git revert "commit-hash" -> it will also undo changes, but instead of remove any commit from branch, it will create a new commit with reverted version. Use revert instead of reset if you ever pushed to an origin repo that other people may be using.
+
+REMOTE 
+
+    #It is used to connect a local repo to a remote repo. Usually to github , bitbucket, gitlab...etc
+
+    git remote add "name" "url remote repo" -> connect local repo to a remote one. Usually name param is origin. Usually git push origin master
+    git remote rename "oldname" "newname" -> just rename de remote repo
+
+PUSH 
+
+    git push "remotename" "branchname" -> update the branch in remote with commits in your local + 
+    #You dont really have to be on the brancah you want to push
 
 
 
