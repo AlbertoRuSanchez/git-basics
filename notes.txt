@@ -76,6 +76,9 @@ REBASE
     #When we use git merge in a large team or a concurrent project, we have to update our feature branch often. That makes commit log to get dirty. It is not really smooth.
     #With rebase, if master changed we can use it to re base out branch commits just after the new commits coming from master. Not in the middle with merge. It is like if you created your feature branch with that last master version.
 
+    #The GOLDEN RULE:
+    # DO NOT REBASE THE MASTER BRANCH FROM ANOTHER BRANCH because that history is sharted with other persons and then can be difficult to restore
+    # Just rebase from master when you are in your feature branch
 
 
 DIFF
