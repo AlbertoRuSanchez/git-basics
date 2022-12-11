@@ -69,7 +69,7 @@ MERGE
 
 REBASE
 
-    #Is another way to merge branches but with differences with merge command 
+    #Is another way to merge branches but with difference es with merge command 
     #It can be nice to uso for cleanup commit history 
 
     #Rebase vs Merge
