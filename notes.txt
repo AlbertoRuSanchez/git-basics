@@ -67,6 +67,17 @@ MERGE
  	## changes from the other branch
 	## <<<< branch name 
 
+REBASE
+
+    #Is another way to merge branches but with differences with merge command 
+    #It can be nice to uso for cleanup commit history 
+
+    #Rebase vs Merge
+    #When we use git merge in a large team or a concurrent project, we have to update our feature branch often. That makes commit log to get dirty. It is not really smooth.
+    #With rebase, if master changed we can use it to re base out branch commits just after the new commits coming from master. Not in the middle with merge. It is like if you created your feature branch with that last master version.
+
+
+
 DIFF
 
 	#shows the difference between two spots of the repository. it could be between working directory, HEAD, staged files, commits, branches...etc.
