@@ -148,5 +148,8 @@ GIT WORKFLOWS
         #master wont have broken or experimental code
         #master will have a real history commits
 
-
+    #Fork & Clone
+    #Used mainly for big open source projects when we dont have permisions to push. 
+    #So we can fork a repo, creating then an own copy of the repo. There, we can push without problems and create pull requests to the original project. Owners of it can accept and merge our changes. 
+    #That is the way of collaborating with open source projects, for example.
 
