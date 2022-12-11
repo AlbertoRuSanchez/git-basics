@@ -120,14 +120,33 @@ PUSH
 FETCH
 
     #It will update the local repository from the remote, but wont touch my working directory. It update my local origin/master (for example)
+    #We could for example, fetch and then work with the last version of remote if we dont have internet and of course, no one pushed any commit to remote repo
+
     git fetch remotename -> bring remote changes to local repo
     git fetch remotename brachname -> bring specific branch changes from remote
 
-    
+
+PULL
+
+    #It will bring changes from remote, but also, will merge them into out working directory. Into our HEAD.
+    #pulling can provoke conflicts between your working directory and remote changes. You will need to resolve then to choose a final version for your working directory
+
+    git pull remotename branchname -> it actually will fetch to local repo + merge to our working directory
+    git pull -> it will do the same, just bringing changes from the remote default tracking branch.
 
 
+GIT WORKFLOWS
 
+    #Centralized - only one branch (master)
+    #Not ideal for teams where you want to share code, because u have to pull and push to master for that. 
+    #as it is constantly commited by others, devs have to resolve conflicts frequently
+    #Not the best option for experiments
 
+    #Feature branches. Create a branch per feature/fix/anychange
+    #Most common flow. 
+        #You can share code just by switching to a branch
+        #master wont have broken or experimental code
+        #master will have a real history commits
 
 
 
