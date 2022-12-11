@@ -85,6 +85,10 @@ REBASE
     git rebase --continue -> continue with rebase when were conflicts
     git rebase --abort -> abort rebase operation
 
+    #interactive rebase
+    #entering this mode ables us to edit commits, add files, drop commit..etc from our HEAD to a specific commit
+    git rebase -i 7dcd78a -> Enters in interactive rebase mode, and shows all commits from specified to HEAD. For every commit, we can do an action. All actions are listed down
+
 
 DIFF
 
