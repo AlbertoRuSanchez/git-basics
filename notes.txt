@@ -80,6 +80,11 @@ REBASE
     # DO NOT REBASE THE MASTER BRANCH FROM ANOTHER BRANCH because that history is sharted with other persons and then can be difficult to restore
     # Just rebase from master when you are in your feature branch
 
+    git rebase branchname -> bring new commits from branchname and rewrite them before my feature branch commits
+    #if conflicts, i have to choose a version as we do with merge. After that, git add that files and 
+    git rebase --continue -> continue with rebase when were conflicts
+    git rebase --abort -> abort rebase operation
+
 
 DIFF
 
