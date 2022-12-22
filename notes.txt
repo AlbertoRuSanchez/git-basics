@@ -9,7 +9,7 @@ GIT BASICS
 Working directory -> root folder. Where .git is. Local repository
 Staging area -> files add/prepared to be commited
 Index -> = staging area
-Origin -> remote repository URL
+Origin -> default remote repository name. Also called as upstream by default
 HEAD -> Current branch pointer. HEAD points to actual branch and branch points to a commit (usually last commit) 
 Detached HEAD -> When HEAD points to an old commit of the current branch
 
@@ -88,6 +88,7 @@ REBASE
     #interactive rebase
     #entering this mode ables us to edit commits, add files, drop commit..etc from our HEAD to a specific commit
     git rebase -i 7dcd78a -> Enters in interactive rebase mode, and shows all commits from specified to HEAD. For every commit, we can do an action. All actions are listed down. Every commit since specified will change its hash
+
 
 
 DIFF
