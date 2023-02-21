@@ -145,8 +145,11 @@ You can stash changes of working directory working + stage area and change to an
 it is like to save a version on a memory, and if we want to recover those changes back, we just use unstash
 
 git stash &rarr; save changes and rollback to previous commit. Now you can change to another branch of commit without problemas.
+
 git stash pop &rarr; apply stashed changes to current version and remove stash
+
 git stash apply &rarr; apply stashed changes to current version and dont remove stash
+
 git stash list &rarr; list the stashes. You can stash several changes in distinct stashes
 
 
